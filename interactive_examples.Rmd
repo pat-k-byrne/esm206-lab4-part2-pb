@@ -13,3 +13,38 @@ Blah blah blah blah interactive graphs blah blah built-in data sets blah blah bl
 
 - interactive plots with plotly
 - interactive tables with DT
+
+```{r, include = F}
+library(tidyverse)
+library(DT)
+library(plotly)
+```
+
+
+### A. Interactive graph of iris dimensions
+
+Using Edgar Andersons famous iris data set which is built into R
+
+```{r, echo = F}
+
+iris_graph <- ggplot(data = iris, aes(x = Petal.Width, y = Petal.Length)) +
+  geom_point(aes(size = Sepal.Width,
+                 color = Species), 
+             alpha = 0.5) +
+  theme_minimal() +
+  labs(x = 'Petal Width (cm)',
+       y = 'Petal Length (cm)',
+       title = 'My iris graph')
+
+iris_graph
+
+ggplotly(iris_graph)
+
+```
+
+
+```{r}
+datatable(msleep)
+```
+
+
