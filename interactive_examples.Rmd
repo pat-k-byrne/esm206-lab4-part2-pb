@@ -1,0 +1,15 @@
+---
+title: "Interactive graph examples"
+author: "Pat Byrne"
+date: "10/22/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Blah blah blah blah interactive graphs blah blah built-in data sets blah blah blah
+
+- interactive plots with plotly
+- interactive tables with DT
