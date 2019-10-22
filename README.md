@@ -1,1 +1,9 @@
-# esm206-lab4-part2-pb
+# My  S I C K  readme
+
+- Some
+- bullet
+- points
+
+Other useful stuff
+
+*YEET*
